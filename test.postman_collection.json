@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "ec129b68-c885-49bd-99df-fead1b87b026",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18644212"
+	},
+	"item": [
+		{
+			"name": "localhost:8020/ApiRest/customer/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"name\": \"Jose\",\n    \"phone\": \"3024\",\n    \"email\": \"lhges5@hq.com\",\n    \"shippingAddress\": {\n            \"id\": 2,\n            \"street\": \"Jose\",\n            \"numberStreet\": \"3028171\",\n            \"city\": \"saules@hq.com\",\n            \"zipCode\": 38282,\n            \"country\": \"Colombia\"\n        }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8020/ApiRest/customer/",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"ApiRest",
+						"customer",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8020/ApiRest/order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderNumber\": \"019222\",\n    \"date\": 122222,\n\n    \"customer\": \n        {\n            \"id\": 2,\n            \"name\": \"Jose\",\n            \"phone\": \"3028171\",\n            \"email\": \"saules@hq.com\",\n            \"primary_shipping_address_id\": 38282\n        }\n    ,\n    \"paymentType\": \"PAYPAL\",\n    \"products\": \n    [\n        {\n            \"quantities\": 2.0,\n            \"id\": 3\n        },\n        {\n            \"quantities\": 2.0,\n            \"id\": 3\n            \n        }\n\n    ]\n\n\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8020/ApiRest/order",
+					"host": [
+						"localhost"
+					],
+					"port": "8020",
+					"path": [
+						"ApiRest",
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8010/ApiRest/addressshipping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8010/ApiRest/addressshipping",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"ApiRest",
+						"addressshipping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8010/ApiRest/addressshipping",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"street\": \"Jose\",\n\t\"numberStreet\": \"3028171\",\n\t\"city\": \"saules@hq.com\",\n\t\"zipCode\": 38282,\n    \"country\": \"Colombia\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8010/ApiRest/addressshipping",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"ApiRest",
+						"addressshipping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8010/ApiRest/product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"description\": \"description 33\",\n    \"price\": 2.0,\n    \"weight\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8010/ApiRest/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"ApiRest",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8020/ApiRest/addressshipping/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ApiRest/addressshipping/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiRest",
+						"addressshipping",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8020/ApiRest/customer/2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ApiRest/customer/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiRest",
+						"customer",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ApiRest/customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ApiRest/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiRest",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ApiRest/product/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ApiRest/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiRest",
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ApiRest/order/3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ApiRest/order/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiRest",
+						"order",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/ApiRest/order/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/ApiRest/order/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ApiRest",
+						"order",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
